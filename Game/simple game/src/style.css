@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(5rem, 1fr)); /* Default 4x4 layout */
+  grid-template-rows: repeat(4, minmax(5rem, 1fr)); /* Ensure 4 rows */
+  gap: 1rem; /* Adjust the gap as needed */
+  max-width: 20rem; /* Adjust the maximum width as needed */
+  max-height: 20rem; /* Adjust the maximum height as needed */
+
+  /* Center the grid horizontally and vertically */
+  justify-content: center;
+  align-content: center;
+
+  /* Media query for screens with a maximum width of 768px (small screens) */
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(3, minmax(5rem, 1fr)); /* 3x6 layout on small screens */
+    grid-template-rows: repeat(6, minmax(5rem, 1fr)); /* 3x6 layout on small screens */
+  }
+}
+
+.card {
+  width: 100%;
+  height: 0;
+  padding-top: 100%; /* Maintain a 1:1 aspect ratio for each card */
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  position: relative; /* Add relative positioning to the card */
+}
+
+.card.highlighted {
+  background-color: #ffd700;
+}
+
+.card img {
+  max-width: 70%; /* Adjust the maximum width of the SVG as needed */
+  max-height: 70%; /* Adjust the maximum height of the SVG as needed */
+  position: absolute; /* Add absolute positioning to the SVG */
+  top: 50%; /* Position the SVG vertically at the center of the card */
+  left: 50%; /* Position the SVG horizontally at the center of the card */
+  transform: translate(-50%, -50%); /* Center the SVG within the card */
+}
+
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* ... (previous CSS rules) */
+
+/* Card Styles */
+.card {
+  width: 100%;
+  height: 0;
+  padding-top: 100%; /* Maintain a 1:1 aspect ratio for each card */
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  position: relative; /* Add relative positioning to the card */
+}
+
+.card.selected {
+  background-color: #00f; /* Blue for selected card */
+}
+
+.card.random-selected {
+  background-color: #0f0; /* Green for randomly selected card */
+}
+
+/* ... (other CSS rules) */
+
+
+/* Restart button styles */
+#restart-button {
+  display: block;
+  margin: 20px auto; /* Center the button horizontally */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Center card content */
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+/* ... (previous CSS rules) */
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Yes and No button styles within the modal */
+.modal-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Restart button styles */
+#restart-button {
+  display: block;
+  margin-top: 3rem ; /* Center the button horizontally */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Center card content */
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  /* position: absolute;
+  top: 0rem; */
+}
+
+
+
