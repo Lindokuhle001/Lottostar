@@ -14,29 +14,43 @@ body {
   background-color: #f0f0f0;
 }
 
+
+.display{
+  position: absolute;
+  top:-4px;
+}
+
+
+#winnings{
+  font-size: 2rem; 
+  color: #007bff; 
+  text-align: center; 
+  margin: 3rem;
+}
+
 .game-container {
   display: grid;
-  grid-template-columns: repeat(4, minmax(5rem, 1fr)); /* Default 4x4 layout */
-  grid-template-rows: repeat(4, minmax(5rem, 1fr)); /* Ensure 4 rows */
-  gap: 1rem; /* Adjust the gap as needed */
-  max-width: 20rem; /* Adjust the maximum width as needed */
-  max-height: 20rem; /* Adjust the maximum height as needed */
+  grid-template-columns: repeat(4, minmax(5rem, 1fr)); 
+  grid-template-rows: repeat(4, minmax(5rem, 1fr));
+  gap: 1rem; 
+  max-width: 20rem; 
+  max-height: 20rem; 
 
-  /* Center the grid horizontally and vertically */
+ 
   justify-content: center;
   align-content: center;
 
-  /* Media query for screens with a maximum width of 768px (small screens) */
+  
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(3, minmax(5rem, 1fr)); /* 3x6 layout on small screens */
-    grid-template-rows: repeat(6, minmax(5rem, 1fr)); /* 3x6 layout on small screens */
+    grid-template-columns: repeat(3, minmax(5rem, 1fr)); 
+    grid-template-rows: repeat(6, minmax(5rem, 1fr)); 
   }
 }
 
 .card {
   width: 100%;
   height: 0;
-  padding-top: 100%; /* Maintain a 1:1 aspect ratio for each card */
+  padding-top: 100%; 
   background-color: #fff;
   border-radius: 10px;
   cursor: pointer;
@@ -44,7 +58,7 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  position: relative; /* Add relative positioning to the card */
+  position: relative; 
 }
 
 .card.highlighted {
@@ -52,12 +66,12 @@ body {
 }
 
 .card img {
-  max-width: 70%; /* Adjust the maximum width of the SVG as needed */
-  max-height: 70%; /* Adjust the maximum height of the SVG as needed */
-  position: absolute; /* Add absolute positioning to the SVG */
-  top: 50%; /* Position the SVG vertically at the center of the card */
-  left: 50%; /* Position the SVG horizontally at the center of the card */
-  transform: translate(-50%, -50%); /* Center the SVG within the card */
+  max-width: 70%; 
+  max-height: 70%;
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
 }
 
 
@@ -84,13 +98,11 @@ body {
 }
 
 
-/* ... (previous CSS rules) */
-
 /* Card Styles */
 .card {
   width: 100%;
   height: 0;
-  padding-top: 100%; /* Maintain a 1:1 aspect ratio for each card */
+  padding-top: 100%;
   background-color: #fff;
   border-radius: 10px;
   cursor: pointer;
@@ -98,18 +110,17 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  position: relative; /* Add relative positioning to the card */
+  position: relative; 
 }
 
 .card.selected {
-  background-color: #00f; /* Blue for selected card */
+  background-color: #00f; 
 }
 
 .card.random-selected {
-  background-color: #0f0; /* Green for randomly selected card */
+  background-color: #0f0;
 }
 
-/* ... (other CSS rules) */
 
 
 /* Restart button styles */
@@ -134,7 +145,7 @@ body {
 }
 
 
-/* ... (previous CSS rules) */
+
 
 /* Modal Styles */
 .modal {
@@ -173,7 +184,7 @@ body {
 /* Restart button styles */
 #restart-button {
   display: block;
-  margin-top: 3rem ; /* Center the button horizontally */
+  margin-top: 3rem ; 
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -189,8 +200,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  /* position: absolute;
-  top: 0rem; */
+
 }
 
 

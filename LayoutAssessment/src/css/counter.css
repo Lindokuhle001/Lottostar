@@ -1,0 +1,79 @@
+.counter {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 2rem 0rem;
+}
+
+.counter-item {
+  position: relative;
+  margin-right: 0.8rem;
+}
+
+#rand {
+  left: calc(3.8rem - 50%);
+}
+
+.charity-content {
+  position: relative;
+}
+
+.counter-number {
+  position: absolute;
+  top: calc(-0.71rem + 50%);
+  left: calc(4.5rem - 50%);
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 6.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1875rem;
+  text-transform: uppercase;
+}
+
+#charity-button {
+  position: relative;
+  right:-41.5rem;
+  font-size: 1.3rem;
+  width: 12rem;
+  border-radius: 1.875rem;
+  border: 2px solid var(--Primary-Colour, #fd0);
+  background: var(
+    --Secondary-Colour,
+    linear-gradient(180deg, #5c006a 0%, #44034f 100%)
+  );
+  margin-left: auto;
+  margin-right: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+#charity-button:hover {
+  color: var(--secondary-Color, #44034f);
+  background-color: var(--Primary-Colour, #fd0);
+}
+
+#charity-paragraph {
+  color: #fff;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.1875rem;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: 2.7rem;
+}
+
+.counter-item::after {
+  position: absolute;
+  background-color: var(--secondary-Color, #44034f);
+  /* padding-left: 9rem; */
+  width: 5.9rem;
+  height: 0.2rem;
+  content: "";
+  top: 4.15rem;
+  left: 0rem;
+  transform: translateY(-50%);
+}

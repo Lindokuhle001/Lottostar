@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Responsive Form</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/form.css" />
+    <link rel="stylesheet" href="./src/css/charity.css" />
+    <link rel="stylesheet" href="./src/css/counter.css" />
+    <script defer type="module"  src="./src/main.ts"></script>
+    <script defer type="module"  src="./src/counter.tsx"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img width="100%" height="100%" src="./src/assets/header.svg" alt="background image" />
+      </div>
+      <img id="win-image" src="./src/assets/win.svg" alt="background image">
+    </header>
+
+    <main class="container">
+      <section id="formSection">
+        <form id="form">
+          <div id="form-paragraph" class="form-devider">
+            <p class="text form-paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
+              euismod arcu. Vivamus sit amet lacinia purus. Nulla a turpis
+              ipsum. Maecenas ante erat, iaculis ac hendrerit non, accumsan quis
+              neque. Nullam et congue quam. Quisque luctus egestas gravida.
+              Quisque maximus, diam non vehicula imperdiet, nunc purus dapibus
+              est, eu efficitur orci dolor eu turpis.
+            </p>
+          </div>
+
+          <div class="form-devider">
+            <div class="form-heading-Container">
+              <img
+                class="icon"
+                src="./src/assets/question.svg"
+                alt="My Happy SVG"
+              />
+              <h1 id="lotteryGame" class="form-heading">
+                name one lottery game that you can bet on at
+                <a href="lottorstar.co.za">lottostar.co.za</a>
+              </h1>
+            </div>
+            <div class="form-group lottery">
+              <label for="lotteryGame"></label>
+              <input
+                placeholder="E.G LOTTORY"
+                type="text"
+                id="lotteryGame"
+                name="lotteryGame"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-devider">
+            <div class="form-heading-Container">
+              <img class="icon" src="./src/assets/pen.svg" alt="My Happy SVG" />
+              <h1 id="whoYouAre" class="form-heading">tell us who you are</h1>
+            </div>
+
+            <div class="grid-container">
+              <div class="form-group grid-item">
+                <label for="id"></label>
+                <input
+                  placeholder="ID NUMBER"
+                  type="text"
+                  id="id"
+                  name="id"
+                  required
+                />
+              </div>
+              <div class="form-group grid-item">
+                <label for="name"></label>
+                <input
+                  placeholder="NAME"
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group grid-item">
+                <label for="surname"></label>
+                <input
+                  placeholder="SURNAME"
+                  type="text"
+                  id="surname"
+                  name="surname"
+                  required
+                />
+              </div>
+              <div class="form-group grid-item">
+                <label for="email"></label>
+                <input
+                  placeholder="EMAIL"
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-group grid-item">
+                <label for="mobile"></label>
+                <input
+                  placeholder="PHONE NUMBER"
+                  type="tel"
+                  id="mobile"
+                  name="mobile"
+                  required
+                />
+              </div>
+              <div id="terms" class="form-group grid-item">
+                <input
+                  class="round-checkbox"
+                  type="checkbox"
+                  id="accept"
+                  name="accept"
+                  required
+                />
+                <span class="checkmark"></span>
+                <label for="accept">ACCEPT <a href="#">T’s & c’s</a></label>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="charitySection">
+        <div class="charity-image-container">
+          <div class="charity-image">
+          </div>
+          <p id="charity-name">charity <br/> name</p>
+        </div>
+        <div class="charity-content">
+          <h1 class="charity-header">RAISED FOR CHARITY</h1>
+          <div class="counter-container">
+
+            <div class="counter"> 
+              <div class="counter-item" >
+                <img src="./src/assets/charity.svg" class="img-counter" alt="counter imade">
+                <p class="counter-number" id="rand">R</p>
+              </div>
+              <div class="counter-item" >
+                <img src="./src/assets/charity.svg" class="img-counter" alt="counter imade">
+                <p class="counter-number"></p>
+              </div>
+              <div class="counter-item" >
+                <img src="./src/assets/charity.svg" class="img-counter" alt="counter imade">
+                <p class="counter-number">1</p>
+              </div>
+              <div class="counter-item" >
+                <img src="./src/assets/charity.svg" class="img-counter" alt="counter imade">
+                <p class="counter-number">0</p>
+              </div>
+              <div class="counter-item" >
+                <img src="./src/assets/charity.svg" class="img-counter" alt="counter imade">
+                <p class="counter-number">0</p>
+              </div>
+              <div class="counter-item" >
+                <img src="./src/assets/charity.svg" class="img-counter" alt="counter imade">
+                <p class="counter-number">7</p>
+              </div>
+              <div class="counter-item" >
+                <img src="./src/assets/charity.svg" class="img-counter" alt="counter imade">
+                <p class="counter-number">3</p>
+              </div>
+              <div class="counter-item" >
+                <img src="./src/assets/charity.svg" class="img-counter" alt="counter imade">
+                <p class="counter-number">2</p>
+              </div>
+            </div>
+ 
+          </div>
+          <button id="charity-button">LEARN MORE</button>
+          <P id="charity-paragraph">corporate social responsibility Total contributions</P>
+          
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- <div class="container"> -->
+      <p class="text">
+        LottoStar is licensed by the Mpumalanga Economic Regulator. No
+        under18’s. National Responsible Gambling Programme 0800 006 008. You are
+        not playing directly in these lotteries but rather betting on the
+        outcome or result of such lotteries.
+      </p>
+      <!-- </div> -->
+    </footer>
+  </body>
+</html>
